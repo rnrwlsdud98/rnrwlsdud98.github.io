@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            color: teal;
+            padding: 0;
+            margin: 20px;
+        }
+        li {
+            list-style-type: none;
+        }
+        #logo {
+            background-color: white;
+        }
+        #menu {
+            height: 40px;
+            background-color:white;
+            padding-top: 15px;
+            font-size: 20px;
+            text-align: center;
+            grid-template-columns: 280px;
+        }
+        #menu li {
+            display: inline;
+            
+        }
+        a {
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="./img/logo.PNG">
+    </div>
+    <ul id="menu">
+        <li><a href="./intro.html" target="if_a">소개</a></li>
+        <li>ㅣ</li>
+        <li><a href="./album.html" target="if_a">앨범</a></li>
+        <li>ㅣ</li>
+        <li><a href="./hitsong.html" target="if_a">히트곡</a></li>
+        <li>ㅣ</li>
+        <li><a href="./award.html"target="if_a">수상내역</a></li> 
+    </ul>
+    <div>
+        <iframe src="./img/singer1.PNG" name="if_a" width="1000" height="800" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
