@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id="fruit"></p>
+    <p>[fruit1 속성]</p>
+    <p id="fruit0"></p>
+    <p>[fruit2 속성]</p>
+    <p id="fruit1"></p>
+    <p>[fruit3 속성]</p>
+    <p id="fruit2"></p>
+    <script>
+        var fruit=new Array (
+            ['사과', '21000', 10],
+            ['참외', '18000', 20],
+            ['귤', '15000', 30]
+        );
+        var cname=document.getElementById("fruit");
+        cname.textContent="fruits"
+        for(var i=0; i<3; i++) {
+            var cname=document.getElementById("fruit"+i);
+        cname.textContent=fruit[i];
+        }
+        function printMsg(name, price, number) { 
+            document.write("과일 이름: <b>" + name + "</b><br>");
+            document.write("과일 가격: <b>" + price + "</b><br>");
+            document.write("과일 개수: <b>" + number + "</b><br>");
+        }
+    </script>
+    <button type="button" onclick="printMsg('사과', '21000', 10)">fruit1</button>
+    <button type="button" onclick="printMsg('참외', '18000', 20)">fruit2</button>
+    <button type="button" onclick="printMsg('귤', '15000', 30)">fruit3</button>
+</body>
+</html>

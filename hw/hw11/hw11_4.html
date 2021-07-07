@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>[fruit1]</p>
+    <p id="data10"></p>
+    <p id="data20"></p>
+    <p id="data30"></p>
+    <p>[fruit2]</p>
+    <p id="data11"></p>
+    <p id="data21"></p>
+    <p id="data31"></p>
+    <p>[fruit3]</p>
+    <p id="data12"></p>
+    <p id="data22"></p>
+    <p id="data32"></p>
+    <script>
+       var fruit=[
+            {name:'사과', price:'21000', number:10 },
+            {name:'참외', price:'18000', number:20 },
+            {name:'귤', price:'15000', number:30 }
+        ]
+        for(var i=0; i<3; i++) {
+            var cname=document.getElementById("data1"+i);
+            cname.textContent='이름 : ' + fruit[i].name;
+            var cname=document.getElementById("data2"+i);
+            cname.textContent='가격 : ' + fruit[i].price;
+            var cname=document.getElementById("data3"+i);
+            cname.textContent='개수 : ' + fruit[i].number;
+        }
+        function printMsg(name, price, number) { 
+            document.write("이름: <b>" + name + "</b><br>");
+            document.write("가격: <b>" + price + "</b><br>");
+            document.write("개수: <b>" + number + "</b><br>");
+        }
+    </script>
+    <button type="button" onclick="printMsg('사과', '21000', 10)">fruit1</button>
+    <button type="button" onclick="printMsg('참외', '18000', 20)">fruit2</button>
+    <button type="button" onclick="printMsg('귤', '15000', 30)">fruit3</button>
+</body>
+</html>

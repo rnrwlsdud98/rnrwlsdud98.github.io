@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<p>
+    <script>
+        function calculate() {
+            var input=document.getElementById('yours');
+            var birth=input.value;
+
+            var x=new Date(birth);
+            var y=new Date();
+            var diff= y-x;
+
+            var day= Math.ceil(diff / (1000 * 3600 * 24));
+            var age= Math.floor(day/365);
+            
+            var cname=document.getElementById("result");
+            cname.textContent="당신은 태어나서부터"+ day +"일 경과해서 지금은"+ age +"살입니다";
+        };
+    </script>
+    <h1>내가 살아온 인생 계산하기</h1>
+    생년월일 입력: <input type="date" id="yours"></p>
+    <input type="button" onclick="calculate()" value="(만)나이 계산">
+    <p id="result">당신은 태어나서부터 ???일 경과해서 지금은 ???살 입니다.</p>
+</body>
+</html>
