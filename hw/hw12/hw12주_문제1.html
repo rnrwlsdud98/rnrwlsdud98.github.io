@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>
+            var x=1;
+            var sum=0;
+            while(x<=10) {
+                 sum+=x;
+                 x++;
+            }
+            function showAlert1() {
+                setTimeout(function(){ 
+                    alert("10까지 더한 값은" + sum + "입니다.")},
+                0);
+            }
+            var x=1;
+            var sum=0;
+            while(x<=50) {
+                 sum+=x;
+                 x++;
+            }
+            function showAlert2() {
+                setTimeout(function(){ alert("50까지 더한 값은" + sum + "입니다.")},
+                0);
+            }
+            var x=1;
+            var sum=0;
+            while(x<=100) {
+                 sum+=x;
+                 x++;
+            }
+            function showAlert3() {
+                setTimeout(function(){ alert("100까지 더한 값은" + sum + "입니다.")},
+                0);
+            }
+           
+        </script>
+    </head>
+    <body>
+        <button onclick="showAlert1()">10까지 더하기</button>
+        <button onclick="showAlert2()">50까지 더하기</button>
+        <button onclick="showAlert3()">100까지 더하기</button>
+    </body>
+</html>
